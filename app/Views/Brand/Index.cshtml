@@ -2,10 +2,14 @@
 
 <h1>Marcas de Cerveza</h1>
 
+<p>
+    <a asp-action="Create">Registrar</a>
+</p>
+
 <table class="table">
     <thead>
         <tr>
-            <th></th>
+            <th>Nombre</th>
         </tr>
     </thead>
 
@@ -13,7 +17,7 @@
         @foreach (var brand in Model)
         {
             <tr>
-                <th>@Html.DisplayFor(m => brand.Name)</th>
+                <th class="text-secondary">@Html.DisplayFor(m => brand.Name)</th>
             </tr>
         }
     </tbody>
